@@ -10,9 +10,24 @@
 	License: Themeforest Split Licence
 	License URI: -
 */
-.entry-title {
-  color: 'red';
 
 @import url("../north-wp/style.css");
 
+.header.header {
+	background: #fff;
+}
+
+.page-padding {
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+@media only screen and (min-width: 736px) {
+	.page-padding {
+		padding-top: 0;
+	}
+
+	.global_notification_on .page-padding {
+		padding-top: 95px
+	}
 }
