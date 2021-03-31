@@ -12,4 +12,7 @@
 */
 .entry-title {
   color: 'red';
+
+@import url("../north-wp/style.css");
+
 }
