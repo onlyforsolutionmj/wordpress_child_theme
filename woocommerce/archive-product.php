@@ -39,15 +39,6 @@ get_header( 'shop' ); ?>
 
 		<?php
 			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
-		<?php
-			/**
 			 * woocommerce_before_shop_loop hook.
 			 *
 			 * @hooked wc_print_notices - 10
@@ -113,6 +104,16 @@ get_header( 'shop' ); ?>
 			 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 			 */
 			do_action( 'woocommerce_after_main_content' );
+		?>
+
+		<?php
+			/**
+			 * woocommerce_archive_description hook.
+			 *
+			 * @hooked woocommerce_taxonomy_archive_description - 10
+			 * @hooked woocommerce_product_archive_description - 10
+			 */
+			do_action( 'woocommerce_archive_description' );
 		?>
 	</div>
 </div>
