@@ -14992,10 +14992,6 @@ input[type=submit].wc-forward:not(.checkout).white:focus {
   }
 }
 /*** Product List View */
-.term-description {
-  display: none;
-}
-
 .thb-shop-title {
   font-size: 1.5rem;
   font-family: Neuzeit-Grotesk;
