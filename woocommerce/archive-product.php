@@ -107,17 +107,17 @@ get_header( 'shop' ); ?>
 		?>
 
 	</div>
-	<div>
-		<?php
-			/**
-			 * woocommerce_archive_description hook.
-			 *
-			 * @hooked woocommerce_taxonomy_archive_description - 10
-			 * @hooked woocommerce_product_archive_description - 10
-			 */
-			do_action( 'woocommerce_archive_description' );
-		?>
-  </div>
+</div>
+<div class="row wpb_row row-fluid align-center">
+	<?php
+		/**
+		 * woocommerce_archive_description hook.
+		 *
+		 * @hooked woocommerce_taxonomy_archive_description - 10
+		 * @hooked woocommerce_product_archive_description - 10
+		 */
+		do_action( 'woocommerce_archive_description' );
+	?>
 </div>
 <?php get_footer( 'shop' ); ?>
 </div>
