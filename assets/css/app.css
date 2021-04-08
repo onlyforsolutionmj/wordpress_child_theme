@@ -14994,8 +14994,8 @@ input[type=submit].wc-forward:not(.checkout).white:focus {
 /*** Product List View */
 .thb-shop-title,
 .products .product h3,
-.h1.product_title {
-  font-family: Neuzeit-Grotesk, "BlinkMacSystemFont", -apple-system, "Roboto", "Lucida Sans";
+.product_title {
+  font-family: Neuzeit-Grotesk, "BlinkMacSystemFont", -apple-system, "Roboto", "Lucida Sans" !important;
 }
 
 .thb-shop-title {
