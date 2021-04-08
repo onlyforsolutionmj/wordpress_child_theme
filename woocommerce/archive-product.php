@@ -106,6 +106,8 @@ get_header( 'shop' ); ?>
 			do_action( 'woocommerce_after_main_content' );
 		?>
 
+	</div>
+	<div>
 		<?php
 			/**
 			 * woocommerce_archive_description hook.
@@ -115,7 +117,7 @@ get_header( 'shop' ); ?>
 			 */
 			do_action( 'woocommerce_archive_description' );
 		?>
-	</div>
+  </div>
 </div>
 <?php get_footer( 'shop' ); ?>
 </div>
