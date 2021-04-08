@@ -21,8 +21,17 @@ h1.product_title {
 }
 
 .products .product h3 {
-    font-size: 2rem !important;
+    font-size: 1rem !important;
+    font-family: Neuzeit-Grotesk;
+    text-transform: uppercase;
     margin-bottom: 0 !important;
+	letter-spacing: 0.1rem;
+	color: #323232;
+}
+
+.products .product.thb-listing-button-style4 .thb_transform_price .button,
+.price ins, .price > .amount {
+	color: #808284;
 }
 
 /*** Single Product View */
