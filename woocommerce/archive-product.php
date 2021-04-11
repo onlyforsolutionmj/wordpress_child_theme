@@ -34,7 +34,7 @@ get_header( 'shop' ); ?>
 		 */
 		// do_action( 'woocommerce_before_main_content' );
 	?>
-<div>
+<div class="row row-fluid full-width-row">
 	<div class="small-12 columns">
 
 		<?php
