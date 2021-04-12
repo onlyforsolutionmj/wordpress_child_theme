@@ -15021,6 +15021,9 @@ h1.product_title {
   margin-bottom: 0 !important;
   letter-spacing: 0.1rem;
   color: #323232;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .products .product.thb-listing-button-style4 .thb_transform_price .button,
