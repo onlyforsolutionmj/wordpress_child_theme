@@ -29,6 +29,10 @@ function add_checkout_page_js() {
       return dateDelivery.diff(dateToday, 'minutes') <= -1440
     }
 
+    function createAccountTrue () {
+      window.jQuery('#createaccount').prop('checked', true)
+    }
+
     function alterHTML () {
       $('.woocommerce-shipping-fields__field-wrapper').prepend('<h3>Delivery details</h3>')
     }
@@ -36,39 +40,20 @@ function add_checkout_page_js() {
     function reduceCheckoutAbandonment () {
       var pattern = RegExp('/checkout/')
       if (pattern.test(window.location.href)) {
+        // disable logo link
+        window.jQuery('.logolink').prop('href', 'javascript:history.back()')
         // hide header on desktop
-        window.jQuery('#menu-navigation-menu').children().hide()
-        window.jQuery('.account-holder').children().hide()
-        window.jQuery('#menu-navigation-menu').prepend('<li id="menu-item-9330" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9330"><a href="javascript:history.back()">< Continue Shopping</a></li>')
+        window.jQuery('.menu-holder').children().hide()
+        window.jQuery('.menu-holder').prepend('<li style="list-style-type:none;" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9330"><a href="javascript:history.back()">🠐 Back to Cart</a></li>')
         // hide header on mobile
-        window.jQuery('.hide-for-large.toggle-holder').children().hide()
-        window.jQuery('.hide-for-large.toggle-holder').prepend('<a style="padding-left:10px;" href="javascript:history.back()">< Back</a>')
+        jQuery('header').children().hide()
+        jQuery('header').prepend('<a style="padding-left:1rem; font-size: 1.2rem;" href="javascript:history.back()">🠐 Back to Cart</a>')
         // hide the footer
         window.jQuery('footer').css('background', '#fff').children().hide()
       }
     }
 
     function rejectInvalidDeliveryDate () {
-      function fireTagManagerEvent (value) {
-        if (typeof window.dataLayer === 'undefined') {
-          console.log('Missing dataLayer variable')
-          return
-        }
-
-        var label = typeof value === 'number'
-          ? value.toString()
-          : value
-
-        var dataObject = {
-          'event': 'delivery_date_invalid',
-          'category': 'click',
-          'label': label,
-          'value': label
-        }
-
-        window.dataLayer.push(dataObject)
-      }
-
       function getDeliveryCity () {
         // input must exist
         var el = window.jQuery('#shipping_postcode')
@@ -204,7 +189,6 @@ function add_checkout_page_js() {
 
           var holidayClosureMessage = checkIsClosedForHoliday(city, input)
           if (holidayClosureMessage) {
-            fireTagManagerEvent(city)
             window.alert(holidayClosureMessage)
             window.jQuery(this).val('')
             return
@@ -212,7 +196,6 @@ function add_checkout_page_js() {
 
           var weekdayClosureMessage = checkIsClosedWeekday(dayInt)
           if (weekdayClosureMessage) {
-            fireTagManagerEvent(city)
             window.alert(weekdayClosureMessage)
             window.jQuery(this).val('')
             return
@@ -262,6 +245,7 @@ function add_checkout_page_js() {
 
     $(document).ready(function () {
       alterHTML()
+      createAccountTrue()
       reduceCheckoutAbandonment()
       rejectInvalidDeliveryDate()
       rejectInvalidMessageLength()
