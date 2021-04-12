@@ -15015,7 +15015,10 @@ h1.product_title {
   font-size: 0.8rem;
 }
 
-.products .product h3 {
+.products .product h3,
+.upsells .product h3,
+.related .products h3,
+.cross-sells h3 {
   font-size: 1rem !important;
   text-transform: uppercase;
   margin-bottom: 0 !important;
@@ -15029,12 +15032,6 @@ h1.product_title {
 .products .product.thb-listing-button-style4 .thb_transform_price .button,
 .price ins, .price > .amount {
   color: #808284;
-}
-
-/*** Single Product View */
-.upsells .product h3,
-.related .products h3 {
-  font-size: 1.3rem !important;
 }
 
 .products .columns:last-child:not(:first-child) {
