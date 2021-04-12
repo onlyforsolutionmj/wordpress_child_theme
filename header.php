@@ -35,7 +35,6 @@
 <body <?php body_class(); ?>>
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 	<div id="wrapper" class="open">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 	<?php get_template_part( 'inc/templates/header/mobile-menu' ); ?>
 	
 			<!-- Start Side Cart -->
