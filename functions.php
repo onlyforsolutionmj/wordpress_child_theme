@@ -1,15 +1,16 @@
 <?php
 
 /** Add momentJS to footer */
+add_action('wp_footer', 'add_moment_js_to_footer');
 function add_moment_js_to_footer() {
   ?>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
   <?php
 }
 
-add_action('wp_footer', 'add_moment_js_to_footer');
 
 /** Add Javascript to Checkout page */
+add_action( 'woocommerce_after_checkout_form', 'add_checkout_page_js');
 function add_checkout_page_js() {
   ?>
   <script type="text/javascript">window.jQuery(function ($) {
@@ -257,9 +258,9 @@ function add_checkout_page_js() {
 
 }
 
-add_action( 'woocommerce_after_checkout_form', 'add_checkout_page_js');
 
 /** Add Javascript to Cart page */
+add_action('woocommerce_after_cart', 'add_cart_page_js');
 function add_cart_page_js() {
   ?>
   <script type="text/javascript">window.jQuery(function ($) {
@@ -280,4 +281,29 @@ function add_cart_page_js() {
   <?php
 }
 
-add_action('woocommerce_after_cart', 'add_cart_page_js');
+
+/* Convert Revenue Tracking */
+add_action( 'woocommerce_thankyou', 'cf_conversion_tracking_thank_you_page' );
+function cf_conversion_tracking_thank_you_page($order_id) {
+	if(!isset($_COOKIE['cfconversioncounted'])){
+		if ( $order_id > 0 ) {
+			$order = wc_get_order( $order_id );
+			if ( $order instanceof WC_Order ) {
+				$order_total = $order->get_subtotal();
+				$item_count = $order->get_item_count();
+				?>
+                <script type="text/javascript">
+                    let subTotal = '<?php echo $order_total ?>';
+					let prodCount = '<?php echo $item_count ?>';
+					
+					subTotal = subTotal.replace(/,/, '');
+					
+					window._conv_q = window._conv_q || [];
+    				window._conv_q.push(["pushRevenue", subTotal, prodCount, 100312454]);
+                </script>
+				<?php
+				setcookie('cfconversioncounted', 'true');
+			}
+		}
+	}
+}
