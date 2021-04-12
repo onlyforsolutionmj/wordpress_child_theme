@@ -29,7 +29,7 @@ function add_checkout_page_js() {
       return dateDelivery.diff(dateToday, 'minutes') <= -1440
     }
 
-    function alterHTMl () {
+    function alterHTML () {
       $('.woocommerce-shipping-fields__field-wrapper').prepend('<h3>Delivery details</h3>')
     }
 
