@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: lust, serif;
+  font-family: neuzeit-grotestk, sans-serif;
   font-style: normal;
   font-weight: 400;
   display: block;
@@ -191,7 +191,7 @@ body,
 
 h1 {
   color: #343434;
-  font-family: Lust, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 2em;
   font-style: normal;
   font-weight: bold;
@@ -202,7 +202,7 @@ h1 {
 
 h2 {
   color: #343434;
-  font-family: Lust, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
@@ -214,7 +214,7 @@ h2 {
 
 h3 {
   color: #343434;
-  font-family: Lust, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: bold;
@@ -226,7 +226,7 @@ h3 {
 
 h4 {
   color: #343434;
-  font-family: Lust, serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: normal;
