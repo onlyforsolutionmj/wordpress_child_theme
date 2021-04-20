@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: neuzeit-grotestk, sans-serif;
+  font-family: neuzeit-grotesk, sans-serif;
   font-style: normal;
   font-weight: 400;
   display: block;
