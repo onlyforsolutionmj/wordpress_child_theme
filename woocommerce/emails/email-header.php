@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title><?php echo get_bloginfo( 'name', 'display' ); ?></title>
-    <link rel="stylesheet" href="https://use.typekit.net/ntc4bdt.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntc4bdt.css" type="text/css">
 </head>
 <body>
 <center>

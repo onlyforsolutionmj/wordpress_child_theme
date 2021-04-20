@@ -19,7 +19,7 @@ if(!defined('ABSPATH')){
 }
 ?>
 p {
-  font-family: neuzeit-grotesk, sans-serif !important;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-style: normal;
   font-size: 1.1em !important;
   font-weight: 400;
@@ -37,7 +37,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-style: normal;
   font-weight: 400;
   display: block;
@@ -191,10 +191,10 @@ body,
 
 h1 {
   color: #343434;
-  font-family: neuzeit-grotesk, sans-serif;
-  font-size: 2em;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+  font-size: 34px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 150%;
   letter-spacing: normal;
   text-align: left;
@@ -202,10 +202,10 @@ h1 {
 
 h2 {
   color: #343434;
-  font-family: neuzeit-grotesk, sans-serif;
-  font-size: 28px;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
+  font-size: 34px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 150%;
   letter-spacing: normal;
   text-align: left;
@@ -214,7 +214,7 @@ h2 {
 
 h3 {
   color: #343434;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 22px;
   font-style: normal;
   font-weight: bold;
@@ -226,7 +226,7 @@ h3 {
 
 h4 {
   color: #343434;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 20px;
   font-style: italic;
   font-weight: normal;
@@ -251,7 +251,7 @@ h4 {
 #templatePreheader,
 #templatePreheader p {
   color: #656565;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 12px;
   line-height: 150%;
   text-align: left;
@@ -280,7 +280,7 @@ h4 {
 #templateHeader p,
 #templateFooter p {
   color: #606060;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 16px;
   line-height: 150%;
   text-align: left;
@@ -308,7 +308,7 @@ h4 {
 #templateBody,
 #templateBody p {
   color: #606060;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 16px;
   line-height: 150%;
   text-align: left;
@@ -355,7 +355,7 @@ h4 {
 #socialBar,
 #socialBar p {
   color: #FFFFFF;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 12px;
   line-height: 150%;
   text-align: center;
@@ -371,7 +371,7 @@ h4 {
 #footerContent,
 #footerContent p {
   color: #656565;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 12px;
   line-height: 150%;
   text-align: center;
@@ -394,7 +394,7 @@ h4 {
 #utilityBar,
 #utilityBar p {
   color: #656565;
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: "neuzeit-grotesk", 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
   font-size: 12px;
   line-height: 150%;
   text-align: center;
