@@ -13,7 +13,7 @@
  * @see 	    https://docs.woocommerce.com/document/template-structure/
  * @author 		WooThemes
  * @package 	WooCommerce/Templates/Emails
- * @version   3.9.2
+ * @version   4.0.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -33,8 +33,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 										 03 8899 6972</p>
                   <div class="spacer 10px"></div>
 									<p><strong>Sydney</strong><br />
-										 Suite 60, 20-28 Maddox St<br />
-										 ALEXANDRIA NSW 2015<br />
+										 62-64 Australia St<br />
+										 CAMPERDOWN NSW 2050<br />
 										 02 8880 9441</p>
 								<div style="height:40px;"></div>
 								<h2>Follow Us</h2>

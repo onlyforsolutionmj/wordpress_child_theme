@@ -13,7 +13,7 @@
  * @see 	https://docs.woocommerce.com/document/template-structure/
  * @author  WooThemes
  * @package WooCommerce/Templates/Emails
- * @version 3.9.2
+ * @version 4.0.0
  */
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -27,11 +27,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title><?php echo get_bloginfo( 'name', 'display' ); ?></title>
-    <link rel="stylesheet" href="https://use.typekit.net/afz8uqm.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntc4bdt.css">
 </head>
 <body>
 <center>
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" background="https://fig-bloom-community.imgix.net/2020/04/HandRose_Black_1500px-01.png?auto=compress%2Cformat&amp;ixlib=php-1.2.1&amp;s=d754c58ae94f6ba19edd7b10a95e6e04" style="height:100%;background-repeat:no-repeat;background-size:cover;background-color:#ffffff;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" background="https://mk0ecommercedny076y1.kinstacdn.com/wp-content/uploads/2021/04/HandRose_Black_1500px-01.png" style="height:100%;background-repeat:no-repeat;background-size:cover;background-color:#ffffff;">
     <tr>
         <td style="height:150px;"></td>
     </tr>
@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <tr>
             <td valign="top" id="templateHeader" style="text-align:center;">
             <!-- BEGIN MODULE: HEADER IMAGE // -->
-            <img style="width:70%; padding: 50px 0;" src="https://fig-bloom-community.imgix.net/2020/04/Logo-Horizontal-Black-920px.png?auto=compress%2Cformat&amp;ixlib=php-1.2.1&amp;s=7db8f65e4c7da49845260df4045e593f" class="templateImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="" alt="Logo-Horizontal-Black-920px.png?auto=compress%2Cformat&amp;ixlib=php-1.2.1&amp;s=7db8f65e4c7da49845260df4045e593f">
+            <img style="width:70%; padding: 50px 0;" src="https://mk0ecommercedny076y1.kinstacdn.com/wp-content/uploads/2021/04/FB_Logo_Horizontal_BLK_914x200-1.png" class="templateImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner="" mc:allowtext="" alt="Logo-Horizontal-Black-920px.png?auto=compress%2Cformat&amp;ixlib=php-1.2.1&amp;s=7db8f65e4c7da49845260df4045e593f">
             <!-- // END MODULE: HEADER IMAGE -->
             </td>
         </tr>
