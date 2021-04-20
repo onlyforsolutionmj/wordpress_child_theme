@@ -31,7 +31,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 </head>
 <body>
 <center>
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" background="https://www.figandbloom.com.au/wp-content/uploads/2021/04/HandRose_Black_1500px-01.png" style="height:100%;background-repeat:no-repeat;background-size:cover;background-color:#ffffff;">
+    <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" id="bodyTable" background="https://www.figandbloom.com.au/wp-content/uploads/2021/04/HandRose_Black.png" style="height:100%;background-repeat:no-repeat;background-size:cover;background-color:#ffffff;">
     <tr>
         <td style="height:150px;"></td>
     </tr>
