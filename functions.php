@@ -87,13 +87,23 @@ function add_checkout_page_js() {
         var closures = [
           {
             city: ['Melbourne', 'Sydney'],
-            date: 'April 2, 2021',
-            message: "Sorry, we are closed on Good Friday. Next available delivery date is Saturday, April 3."
+            date: 'April 25, 2021',
+            message: "Sorry, we are closed on Sunday (except Mother's Day)."
           },
           {
             city: ['Melbourne', 'Sydney'],
-            date: 'April 5, 2021',
-            message: "Sorry, we are closed on Easter Monday. Next available delivery date is Tuewday, April 6."
+            date: 'May 2, 2021',
+            message: "Sorry, we are closed on Sunday (except Mother's Day)."
+          },
+          {
+            city: ['Melbourne', 'Sydney'],
+            date: 'May 16, 2021',
+            message: "Sorry, we are closed on Sunday (except Mother's Day)."
+          },
+          {
+            city: ['Melbourne', 'Sydney'],
+            date: 'May 16, 2021',
+            message: "Sorry, we are closed on Sunday (except Mother's Day)."
           }
         ]
 
@@ -125,7 +135,7 @@ function add_checkout_page_js() {
         var messages = {
           'Sydney': [
             /* Sunday */
-            'Sorry we are closed on Sundays. Please choose any other day.',
+            '',
             /* Monday */
             '',
             /* Tuesday */
@@ -141,7 +151,7 @@ function add_checkout_page_js() {
           ],
           'Melbourne': [
             /* Sunday */
-            'Sorry we are closed on Sundays. Please choose any other day.',
+            '',
             /* Monday */
             '',
             /* Tuesday */
