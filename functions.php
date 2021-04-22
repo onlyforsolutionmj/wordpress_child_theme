@@ -42,7 +42,7 @@ function add_checkout_page_js() {
       var pattern = RegExp('/checkout/')
       if (pattern.test(window.location.href)) {
         // disable logo link
-        window.jQuery('.logolink').prop('href', 'javascript:history.back()')
+        window.jQuery('.logolink').prop('href', '/cart/')
         // hide header on desktop
         window.jQuery('.menu-holder').children().hide()
         window.jQuery('.menu-holder').prepend('<li style="list-style-type:none;" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9330"><a href="javascript:history.back()">🠐 Back to Cart</a></li>')
