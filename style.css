@@ -2,7 +2,7 @@
 	Theme Name: Fig & Bloom
 	Theme URI: https://github.com/dgroch/wordpress_child_theme
 	Description: A clean and fast e-commerce theme for Wordpress.
-	Version: 0.0.20
+	Version: 0.0.18
 	Author: dangroch
 	Author URI: https://github.com/dgroch
 	Template: north-wp
@@ -11,3 +11,42 @@
 	License URI: -
 */
 
+
+@import url("../north-wp/style.css");
+
+/** Product Category Pages */
+.product-category.h2 {
+	padding-top: 50px;
+}
+.product-category.h2,
+.product-category.p {
+	text-align: center;
+}
+.product-category.p.last {
+	padding-bottom: 100px;
+}
+
+/* PRODUCT LIST */
+.products .product h3 {
+	font-size: 20px;
+}
+
+/* BLOG STYLES */
+.post-content h2 {
+	margin-top: 40px;
+}
+
+.post-content img {
+	margin-top: 20px;
+}
+
+.load_more_states{
+	text-decoration: underline;
+    display: inline-block;
+    width: 95%;
+    margin: 0 auto;
+    text-align: right;
+    font-weight: bold;
+}
+
+.load_more_states:hover{text-decoration: none;}
